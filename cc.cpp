@@ -3,18 +3,15 @@
 using namespace std;
 
 
-int dodawanie( int a, int b, int c){
-a += 25;
-b *= 10;
-c /= 2;
+int main(){
 
-cout << a << endl;
-cout << b << endl;
-cout << c << endl;
+int i;
 
-return a + b + c;
+for(int i = 0; i < 32; i++){
+    cout << 32 + i << " (" << char(32 + i) << ") "
+         << 64 + i << " (" << char(64 + i) << ") "
+         << 96 + i << " (" << char(96 + i) << ") " << endl;
 }
 
-int main(){
-cout << dodawanie(10,15,20) << endl;
+return 0;
 }
